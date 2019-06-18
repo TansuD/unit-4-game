@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unit 4 Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        background-color: darkcyan;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      #gameBox {
+        background-color: burlywood;
+        color: brown;
+        width: 50rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="gameBox">
+      <header>
+        <h1>
+          <strong>Crystals Collector!</strong>
+        </h1>
+        <br />
+      </header>
+      <div class="row">
+        <div class="col-lg-6">
+          <p>You will be given a random number at the start of the game.</p>
+          <br />
+          <p>
+            There are four crystals below. By clicking on a crystal, you will
+            add a specific amount of points to your total score.
+          </p>
+          <br />
+          <p>
+            You will win the game by matching your total score to a ranndom
+            number. You lose the game if your total score goes above the random
+            number.
+          </p>
+          <br />
+          <p>
+            The value of each crystal is hidden from you until you click on it.
+          </p>
+          <br />
+          <p>
+            Each time when the game starts, the game waill change the values of
+            each crystal.
+          </p>
+          <br />
+        </div>
+      </div>
+      <div class="row">
+        <img
+          src="assets/images/green-gem.png"
+          class="green-gem"
+          alt="Green Gem"
+          width="150"
+          height="150"
+        />
+        <img
+          src="assets/images/purple-gem.png"
+          class="purple-gem"
+          alt="Purple Gem"
+          width="150"
+          height="150"
+        />
+        <img
+          src="assets/images/blue-gem.png"
+          class="blue-gem"
+          alt="Blue Gem"
+          width="150"
+          height="150"
+        />
+        <img
+          src="assets/images/red-gem.png"
+          class="red-gem"
+          alt="Red Gem"
+          width="150"
+          height="150"
+        />
+      </div>
+      <br />
+      <div class="row">
+        <div class="col">
+          <h2>Computer's score: <span id="computerScore"></span></h2>
+        </div>
+        <div class="col">
+          <h4>Wins: <span id="wins"></span></h4>
+          <h4>Losses: <span id="losses"></span></h4>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <div class="card-text">
+            <h4>Your total score is: <span id="totalScore"></span></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+  </body>
+</html>
